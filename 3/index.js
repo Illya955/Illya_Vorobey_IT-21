@@ -12,9 +12,13 @@ console.log("Умова:", a > b && b < c);
 let n = -1;
 let prime = true;
 
-for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
-        prime = false;
+if (n <= 1) {
+    prime = false;
+} else {
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            prime = false;
+        }
     }
 }
 
