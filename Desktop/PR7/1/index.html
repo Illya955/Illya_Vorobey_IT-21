@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Theme Storage</title>
+  <style>
+    body {
+      transition: 0.5s;
+    }
+    .light {
+      background: white;
+      color: black;
+    }
+    .dark {
+      background: black;
+      color: white;
+    }
+    .custom {
+      background: var(--bg);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+<h2>Theme Switcher</h2>
+
+<select id="theme">
+  <option value="light">Light</option>
+  <option value="dark">Dark</option>
+  <option value="custom">Custom</option>
+</select>
+
+<br><br>
+
+<input type="color" id="bgColor">
+<input type="color" id="textColor">
+
+<button id="save">Save</button>
+
+<script src="index.js"></script>
+</body>
+</html>
